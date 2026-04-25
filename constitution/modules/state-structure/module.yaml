@@ -1,0 +1,41 @@
+id: state-structure
+title: 国家结构形式
+title_en: State Structure
+category: governance
+status: draft
+description: |
+  国家采取联邦制还是单一制，是最根本的宪法设计选择之一。
+  联邦制赋予地方更大自治权，适合幅员辽阔、民族多元的国家。
+  单一制有利于政令统一和资源调配，但地方自治空间较小。
+  中国历史上以单一制为主，但也存在联邦制的讨论传统。
+
+options:
+  - id: federal
+    title: 联邦制
+    summary: 各省/邦享有独立的立法权和行政权，中央与地方分权
+    file: options/federal.md
+
+  - id: unitary-decentralized
+    title: 单一制（分权型）
+    summary: 单一制国家，但地方享有较大的自治权
+    file: options/unitary-decentralized.md
+
+  - id: unitary-centralized
+    title: 单一制（集权型）
+    summary: 传统单一制国家，中央政府拥有主要权力
+    file: options/unitary-centralized.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 美国
+    note: 联邦制典范
+  - country: 德国
+    note: 联邦制，各州拥有独立的宪法和政府
+  - country: 日本
+    note: 单一制，但地方自治较充分
+  - country: 法国
+    note: 单一制集权国家，近年推行去中心化改革
+
+tags: [争议性, 国家治理, 根本制度]

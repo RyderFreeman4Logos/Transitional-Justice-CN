@@ -1,0 +1,62 @@
+# Core Provisions Index (核心条款索引)
+#
+# These provisions are NON-NEGOTIABLE. They form the immutable
+# foundation of the constitutional order. No module selection
+# or profile configuration can override or remove them.
+
+provisions:
+  - id: human-dignity
+    file: human-dignity.md
+    summary: 人格尊严不可侵犯，是一切基本权利的基础
+
+  - id: equality
+    file: equality.md
+    summary: 法律面前人人平等，禁止任何形式的歧视
+
+  - id: freedom-of-speech
+    file: freedom-of-speech.md
+    summary: 言论自由，包括批评政府的权利
+
+  - id: freedom-of-press
+    file: freedom-of-press.md
+    summary: 新闻自由与出版自由，禁止审查制度
+
+  - id: freedom-of-assembly
+    file: freedom-of-assembly.md
+    summary: 集会、结社与和平示威的自由
+
+  - id: freedom-of-religion
+    file: freedom-of-religion.md
+    summary: 宗教信仰自由，政教分离
+
+  - id: personal-liberty
+    file: personal-liberty.md
+    summary: 人身自由，禁止任意逮捕与拘禁
+
+  - id: prohibition-of-torture
+    file: prohibition-of-torture.md
+    summary: 禁止酷刑及残忍、不人道的待遇或处罚
+
+  - id: due-process
+    file: due-process.md
+    summary: 正当法律程序，无罪推定，获得律师辩护的权利
+
+  - id: right-to-vote
+    file: right-to-vote.md
+    summary: 普选权与被选举权
+
+  - id: separation-of-powers
+    file: separation-of-powers.md
+    summary: 立法、行政、司法三权分立与制衡
+
+  - id: judicial-independence
+    file: judicial-independence.md
+    summary: 司法独立，法官不受行政干预
+
+  - id: right-to-property
+    file: right-to-property.md
+    summary: 私有财产权受法律保护
+
+  - id: right-to-privacy
+    file: right-to-privacy.md
+    summary: 隐私权，包括通信秘密与数据保护

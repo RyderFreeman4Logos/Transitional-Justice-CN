@@ -1,0 +1,40 @@
+id: gun-rights
+title: 枪支管制
+title_en: Gun Rights and Control
+category: civil-rights
+status: draft
+description: |
+  公民是否有权持有枪支是一个争议性议题。
+  支持者认为持枪权是抵抗暴政的最后屏障。
+  反对者认为枪支泛滥将严重危害公共安全。
+
+options:
+  - id: right-to-bear-arms
+    title: 持枪权入宪
+    summary: 公民持有和携带武器的权利受宪法保护
+    file: options/right-to-bear-arms.md
+
+  - id: licensed
+    title: 许可证制度
+    summary: 公民可在获得许可证后合法持有枪支
+    file: options/licensed.md
+
+  - id: prohibited
+    title: 严格禁枪
+    summary: 除执法和军事用途外禁止民间持有枪支
+    file: options/prohibited.md
+
+dependencies:
+  - public-safety  # future module
+
+references:
+  - country: 美国
+    note: 第二修正案 - 宪法保障持枪权
+  - country: 瑞士
+    note: 民兵制度下的枪支管理，持枪率高但枪支暴力极低
+  - country: 日本
+    note: 世界上最严格的枪支管制之一
+  - country: 捷克
+    note: 2021年将持枪权写入宪法
+
+tags: [争议性, 公民权利, 公共安全]

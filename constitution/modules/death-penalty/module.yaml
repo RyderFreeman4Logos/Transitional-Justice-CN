@@ -1,0 +1,38 @@
+id: death-penalty
+title: 死刑存废
+title_en: Death Penalty
+category: criminal-justice
+status: draft
+description: |
+  是否保留死刑是刑事司法领域最重大的争议之一。
+  废除派认为死刑不可逆、存在误判风险、且未被证明具有独特的威慑效果。
+  保留派认为死刑对极端恶性犯罪具有必要的震慑和报应功能。
+
+options:
+  - id: abolished
+    title: 完全废除死刑
+    summary: 废除一切死刑，最高刑罚为终身监禁
+    file: options/abolished.md
+
+  - id: restricted
+    title: 严格限制死刑
+    summary: 仅保留极少数最严重罪行的死刑，设置严格程序保障
+    file: options/restricted.md
+
+  - id: moratorium
+    title: 暂停执行（暂缓死刑）
+    summary: 法律上保留死刑但暂停执行，待社会条件成熟后再行决定
+    file: options/moratorium.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 德国
+    note: 基本法第102条明确废除死刑
+  - country: 日本
+    note: 保留死刑，但执行数量极少
+  - country: 韩国
+    note: 法律上保留但事实上暂停执行（自1997年）
+
+tags: [争议性, 刑事司法, 人权]

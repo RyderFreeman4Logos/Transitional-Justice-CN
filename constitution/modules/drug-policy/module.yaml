@@ -1,0 +1,40 @@
+id: drug-policy
+title: 毒品政策
+title_en: Drug Policy
+category: social
+status: draft
+description: |
+  对毒品（特别是大麻等软性毒品）的管制方式。
+  严厉禁毒政策在全球范围内受到越来越多的质疑，
+  部分国家和地区转向去罪化或合法化路线。
+
+options:
+  - id: decriminalized
+    title: 去罪化
+    summary: 个人使用毒品不构成刑事犯罪，以公共卫生手段替代刑事惩罚
+    file: options/decriminalized.md
+
+  - id: cannabis-legal
+    title: 大麻合法化
+    summary: 大麻合法化并纳入监管，其他毒品维持管制
+    file: options/cannabis-legal.md
+
+  - id: strict-prohibition
+    title: 严格禁毒
+    summary: 对所有毒品维持严格的刑事处罚
+    file: options/strict-prohibition.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 葡萄牙
+    note: 2001年去罪化，吸毒率和毒品相关死亡率显著下降
+  - country: 乌拉圭
+    note: 2013年大麻全面合法化
+  - country: 德国
+    note: 2024年大麻合法化
+  - country: 新加坡
+    note: 严刑峻法禁毒政策的代表
+
+tags: [争议性, 社会政策, 公共卫生]

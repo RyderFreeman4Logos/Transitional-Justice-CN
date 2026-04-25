@@ -1,0 +1,16 @@
+name: 自由主义倾向
+name_en: Liberal
+description: |
+  偏重个人权利与自由的配置方案。
+  最大化个人自主权，最小化国家干预。
+
+selections:
+  death-penalty: abolished
+  gun-rights: right-to-bear-arms
+  abortion: protected-right
+  state-structure: federal
+  land-ownership: full-private
+  drug-policy: decriminalized
+  marriage-equality: full-equality
+  immigration: open          # stub
+  euthanasia: legalized      # stub

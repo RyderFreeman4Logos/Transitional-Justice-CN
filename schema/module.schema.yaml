@@ -1,0 +1,79 @@
+# Schema: Optional Module (可选法律模块)
+#
+# Each module represents a contested/debatable legal topic.
+# A module contains 2+ options (mutually exclusive policy positions).
+# The final choice is deferred to a future constitutional convention.
+
+type: object
+required: [id, title, title_en, category, status, options]
+properties:
+  id:
+    type: string
+    description: Unique identifier, kebab-case
+
+  title:
+    type: string
+    description: Chinese title
+
+  title_en:
+    type: string
+    description: English title
+
+  category:
+    type: string
+    enum:
+      - civil-rights        # 公民权利
+      - criminal-justice    # 刑事司法
+      - economic            # 经济制度
+      - social              # 社会政策
+      - governance          # 国家治理
+      - environmental       # 环境政策
+    description: Policy domain
+
+  status:
+    type: string
+    enum: [stub, draft, review, ready]
+    description: |
+      stub    - placeholder, options not yet written
+      draft   - options being drafted
+      review  - under expert review
+      ready   - ready for constitutional convention consideration
+
+  description:
+    type: string
+    description: Brief explanation of the issue and why it is modular
+
+  options:
+    type: array
+    minItems: 2
+    description: Mutually exclusive policy positions
+    items:
+      type: object
+      required: [id, title, summary, file]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        summary: { type: string }
+        file: { type: string, description: "Relative path to option Markdown file" }
+
+  dependencies:
+    type: array
+    items: { type: string }
+    description: Module IDs that must also be configured if this module is selected
+
+  conflicts:
+    type: array
+    items: { type: string }
+    description: Module option combinations that are logically incompatible
+
+  references:
+    type: array
+    items:
+      type: object
+      properties:
+        country: { type: string }
+        note: { type: string }
+
+  tags:
+    type: array
+    items: { type: string }

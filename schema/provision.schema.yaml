@@ -1,0 +1,59 @@
+# Schema: Core Provision (宪法核心条款)
+#
+# Each core provision is a Markdown file with this YAML frontmatter.
+# Core provisions are immutable - they cannot be removed or overridden
+# by module selection. They represent non-negotiable fundamental rights.
+
+type: object
+required: [id, title, title_en, tier, category]
+properties:
+  id:
+    type: string
+    description: Unique identifier, kebab-case
+    examples: [freedom-of-speech, judicial-independence]
+
+  title:
+    type: string
+    description: Chinese title
+
+  title_en:
+    type: string
+    description: English title
+
+  tier:
+    type: string
+    enum: [core]
+    description: Always "core" for provisions in constitution/core/
+
+  category:
+    type: string
+    enum:
+      - fundamental-rights    # 基本权利
+      - political-rights      # 政治权利
+      - governance-structure  # 治理结构
+      - judicial              # 司法制度
+      - rule-of-law           # 法治原则
+    description: Legal domain category
+
+  tags:
+    type: array
+    items: { type: string }
+
+  references:
+    type: array
+    description: Cross-references to existing constitutions
+    items:
+      type: object
+      properties:
+        constitution: { type: string }
+        articles: { type: array, items: { type: [integer, string] } }
+        note: { type: string }
+
+  related_provisions:
+    type: array
+    items: { type: string }
+    description: IDs of related core provisions
+
+  supersedes:
+    type: string
+    description: If this provision replaces an older draft version

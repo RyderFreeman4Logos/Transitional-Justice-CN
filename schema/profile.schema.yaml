@@ -1,0 +1,35 @@
+# Schema: Configuration Profile (预设配置方案)
+#
+# A profile pre-selects one option per module, representing a coherent
+# political philosophy. Profiles are non-binding examples that
+# demonstrate how the modular system works in practice.
+# The actual selection is made at the constitutional convention.
+
+type: object
+required: [name, name_en, description, selections]
+properties:
+  name:
+    type: string
+    description: Chinese name for this profile
+
+  name_en:
+    type: string
+    description: English name
+
+  description:
+    type: string
+    description: Brief description of the political philosophy
+
+  selections:
+    type: object
+    description: |
+      Map of module_id -> option_id.
+      Every module in constitution/modules/ should have an entry.
+    additionalProperties:
+      type: string
+
+  notes:
+    type: object
+    description: Optional per-module rationale for the selection
+    additionalProperties:
+      type: string

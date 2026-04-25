@@ -1,0 +1,37 @@
+id: marriage-equality
+title: 婚姻平权
+title_en: Marriage Equality
+category: civil-rights
+status: draft
+description: |
+  同性婚姻是否应获得与异性婚姻同等的法律地位。
+  涉及平等权、宗教信仰、传统文化价值等多方面考量。
+
+options:
+  - id: full-equality
+    title: 完全婚姻平权
+    summary: 同性伴侣享有与异性伴侣完全相同的婚姻权利
+    file: options/full-equality.md
+
+  - id: civil-union
+    title: 民事结合制度
+    summary: 设立民事结合制度赋予同性伴侣法律保障，但不使用"婚姻"名称
+    file: options/civil-union.md
+
+  - id: traditional
+    title: 传统婚姻定义
+    summary: 宪法将婚姻定义为一男一女的结合
+    file: options/traditional.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 台湾
+    note: 2019年成为亚洲首个实现同性婚姻合法化的地区
+  - country: 南非
+    note: 2006年同性婚姻合法化，宪法法院裁定传统定义违宪
+  - country: 德国
+    note: 2017年同性婚姻合法化
+
+tags: [争议性, 公民权利, 平等权]

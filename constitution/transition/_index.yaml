@@ -1,0 +1,51 @@
+# Transition Protocols Index (过渡法条款索引)
+#
+# These are time-limited provisions governing the transition period.
+# They are NOT optional - they are essential operating procedures.
+# Priority indicates the urgency of enactment after regime change.
+
+protocols:
+  - id: government-continuity
+    file: government-continuity.md
+    priority: critical
+    summary: 确保行政机构不间断运转，避免权力真空
+
+  - id: property-protection
+    file: property-protection.md
+    priority: critical
+    summary: 冻结强制征收，保障人民财产安全
+
+  - id: public-services
+    file: public-services.md
+    priority: critical
+    summary: 维持水电通信交通等基本公共服务
+
+  - id: military-nationalization
+    file: military-nationalization.md
+    priority: critical
+    summary: 军队国家化，脱离政党控制
+
+  - id: transitional-justice
+    file: transitional-justice.md
+    priority: high
+    summary: 追究前政权罪行、平反冤案、真相与和解
+
+  - id: civil-service
+    file: civil-service.md
+    priority: high
+    summary: 公务员体系的审查、留用与改革
+
+  - id: media-liberation
+    file: media-liberation.md
+    priority: high
+    summary: 解除媒体管控，开放新闻自由
+
+  - id: political-parties
+    file: political-parties.md
+    priority: medium
+    summary: 政党登记制度与选举筹备
+
+  - id: international-relations
+    file: international-relations.md
+    priority: medium
+    summary: 国际关系重建、条约继承与国际组织席位

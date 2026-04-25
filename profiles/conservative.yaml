@@ -1,0 +1,16 @@
+name: 保守稳健路线
+name_en: Conservative
+description: |
+  注重社会稳定和渐进改革的配置方案。
+  在保障基本自由的前提下，维持较强的社会管控和传统价值。
+
+selections:
+  death-penalty: restricted
+  gun-rights: prohibited
+  abortion: restricted
+  state-structure: unitary-centralized
+  land-ownership: leasehold
+  drug-policy: strict-prohibition
+  marriage-equality: civil-union
+  immigration: restricted    # stub
+  euthanasia: prohibited     # stub

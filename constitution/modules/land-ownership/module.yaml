@@ -1,0 +1,40 @@
+id: land-ownership
+title: 土地制度
+title_en: Land Ownership System
+category: economic
+status: draft
+description: |
+  土地制度是中国转型中最核心的经济议题之一。
+  现行制度下，城市土地归国家所有，农村土地归集体所有，个人仅有使用权。
+  转型后的土地制度设计直接关系到十四亿人的根本利益。
+
+options:
+  - id: full-private
+    title: 完全私有化
+    summary: 土地可完全私有，所有权可自由买卖、继承、抵押
+    file: options/full-private.md
+
+  - id: mixed
+    title: 混合制
+    summary: 城市建设用地可私有，农业用地和自然资源归国家所有
+    file: options/mixed.md
+
+  - id: leasehold
+    title: 永久使用权制
+    summary: 土地所有权归国家，但赋予个人永久且可交易的使用权
+    file: options/leasehold.md
+
+dependencies:
+  - right-to-property  # core provision
+
+references:
+  - country: 台湾
+    note: 平均地权、土地私有但有涨价归公机制
+  - country: 英国
+    note: 皇室拥有终极所有权，实际为永久租赁制
+  - country: 日本
+    note: 完全私有，但有严格的用途管制
+  - country: 以色列
+    note: 大部分土地为国有，通过长期租约分配
+
+tags: [争议性, 经济制度, 根本制度, 民生]

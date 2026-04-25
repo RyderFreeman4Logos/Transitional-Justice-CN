@@ -1,0 +1,51 @@
+# Optional Modules Index (可选模块索引)
+#
+# Each module represents a policy area where reasonable people
+# disagree. Multiple options are provided for each module.
+# The final selection is deferred to the constitutional convention.
+
+modules:
+  - id: death-penalty
+    title: 死刑存废
+    category: criminal-justice
+    status: draft
+
+  - id: gun-rights
+    title: 枪支管制
+    category: civil-rights
+    status: draft
+
+  - id: abortion
+    title: 堕胎权
+    category: civil-rights
+    status: draft
+
+  - id: state-structure
+    title: 国家结构形式
+    category: governance
+    status: draft
+
+  - id: land-ownership
+    title: 土地制度
+    category: economic
+    status: draft
+
+  - id: drug-policy
+    title: 毒品政策
+    category: social
+    status: draft
+
+  - id: marriage-equality
+    title: 婚姻平权
+    category: civil-rights
+    status: draft
+
+  - id: immigration
+    title: 移民政策
+    category: social
+    status: stub
+
+  - id: euthanasia
+    title: 安乐死
+    category: civil-rights
+    status: stub

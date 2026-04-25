@@ -1,0 +1,55 @@
+# Schema: Transition Protocol (过渡法条款)
+#
+# Transition protocols are time-limited legal provisions that govern
+# the period between regime collapse and the establishment of a
+# constitutionally elected government. They are NOT optional modules -
+# they are essential operating procedures for the transition period.
+
+type: object
+required: [id, title, title_en, category, priority]
+properties:
+  id:
+    type: string
+    description: Unique identifier, kebab-case
+
+  title:
+    type: string
+
+  title_en:
+    type: string
+
+  category:
+    type: string
+    enum:
+      - governance          # 政权交接
+      - security            # 安全与秩序
+      - economic            # 经济稳定
+      - justice             # 转型正义
+      - civil-service       # 公务员体系
+      - international       # 国际关系
+    description: Domain of the transition protocol
+
+  priority:
+    type: string
+    enum: [critical, high, medium]
+    description: |
+      critical - must be enacted within days of transition (Day 0-7)
+      high     - must be enacted within the first month (Day 7-30)
+      medium   - must be enacted within the first year
+
+  duration:
+    type: string
+    description: How long this protocol remains in effect (e.g. "until first election", "2 years")
+
+  references:
+    type: array
+    items:
+      type: object
+      properties:
+        country: { type: string }
+        event: { type: string }
+        note: { type: string }
+
+  related_provisions:
+    type: array
+    items: { type: string }

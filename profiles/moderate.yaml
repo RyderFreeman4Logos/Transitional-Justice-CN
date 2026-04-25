@@ -1,0 +1,16 @@
+name: 温和中间路线
+name_en: Moderate
+description: |
+  在个人自由与社会秩序之间寻求平衡的配置方案。
+  参考欧洲大陆（德国、法国）和东亚民主国家（日本、韩国、台湾）的实践。
+
+selections:
+  death-penalty: moratorium
+  gun-rights: licensed
+  abortion: trimester
+  state-structure: unitary-decentralized
+  land-ownership: mixed
+  drug-policy: cannabis-legal
+  marriage-equality: full-equality
+  immigration: regulated     # stub
+  euthanasia: regulated      # stub

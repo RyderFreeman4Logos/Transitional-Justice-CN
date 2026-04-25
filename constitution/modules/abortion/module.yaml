@@ -1,0 +1,39 @@
+id: abortion
+title: 堕胎权
+title_en: Abortion Rights
+category: civil-rights
+status: draft
+description: |
+  关于堕胎的法律地位，涉及女性身体自主权与胎儿生命权之间的伦理平衡。
+  各国立法差异极大，从完全禁止到完全自由化都有先例。
+
+options:
+  - id: protected-right
+    title: 宪法保障堕胎权
+    summary: 女性有权自主决定是否终止妊娠，此权利受宪法保护
+    file: options/protected-right.md
+
+  - id: trimester
+    title: 孕期阶段制
+    summary: 根据妊娠阶段设定不同的法律规则
+    file: options/trimester.md
+
+  - id: restricted
+    title: 严格限制
+    summary: 仅在特定情形下允许堕胎（强奸、乱伦、危及母体生命）
+    file: options/restricted.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 法国
+    note: 2024年将堕胎权写入宪法
+  - country: 德国
+    note: 孕12周内经咨询后允许，之后仅限医学原因
+  - country: 波兰
+    note: 欧洲最严格的堕胎限制之一
+  - country: 日本
+    note: 经济困难即可作为合法堕胎理由
+
+tags: [争议性, 公民权利, 女性权利, 生命伦理]
