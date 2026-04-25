@@ -1,0 +1,45 @@
+id: judicial-review
+title: 司法审查模式
+title_en: Judicial Review Model
+category: governance
+status: draft
+description: |
+  司法审查（违宪审查）是宪法的执行机制。
+  集中审查制由专设宪法法院垄断违宪审查权，
+  分散审查制允许所有法院在个案中审查法律合宪性。
+  选择哪种模式直接影响宪法权利的实现效果。
+
+options:
+  - id: constitutional-court
+    title: 宪法法院制（集中审查）
+    summary: 设立专门的宪法法院，垄断违宪审查权
+    file: options/constitutional-court.md
+
+  - id: decentralized
+    title: 普通法院审查制（分散审查）
+    summary: 所有法院均可审查法律合宪性，最高法院做最终裁判
+    file: options/decentralized.md
+
+  - id: hybrid
+    title: 混合制
+    summary: 设立宪法法院行使抽象审查权，普通法院保留个案中的合宪性审查权
+    file: options/hybrid.md
+
+dependencies:
+  - government-system  # 政府体制影响宪法法院与其他权力部门的关系
+
+conflicts: []
+
+references:
+  - country: 德国
+    note: 联邦宪法法院（集中审查制典范），可进行抽象审查和宪法诉愿
+  - country: 美国
+    note: 最高法院（分散审查制典范），Marbury v. Madison (1803)
+  - country: 韩国
+    note: 宪法法院（集中审查），在民主化中发挥了关键作用
+  - country: 南非
+    note: 宪法法院，审理了大量里程碑式的人权案件
+  - country: 台湾
+    note: 司法院大法官（集中审查），2022年改制为宪法法庭
+
+tags: [争议性, 司法制度, 宪法秩序]

@@ -50,6 +50,11 @@ modules:
     category: civil-rights
     status: draft
 
+  - id: judicial-review
+    title: 司法审查模式
+    category: governance
+    status: draft
+
   - id: ethnic-autonomy
     title: 少数民族与地区自治
     category: governance
