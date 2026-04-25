@@ -61,6 +61,10 @@ provisions:
     file: right-to-privacy.md
     summary: 隐私权，包括通信秘密与数据保护
 
+  - id: digital-rights
+    file: digital-rights.md
+    summary: 互联网自由、禁止大规模监控和社会信用体系、算法透明、匿名权
+
   - id: state-of-emergency
     file: state-of-emergency.md
     summary: 紧急状态的条件、程序、时限、不可克减权利清单及防滥用条款
