@@ -1,0 +1,51 @@
+id: electoral-system
+title: 选举制度
+title_en: Electoral System
+category: governance
+status: draft
+description: |
+  选举制度决定选票如何转化为议席，直接影响政党格局、少数派代表性和政府稳定性。
+  不同制度各有优劣，不存在"最好"的选举制度，只有最适合特定社会条件的制度。
+  这是宪法设计中影响最深远的选择之一。
+
+options:
+  - id: fptp
+    title: 单选区简单多数制 (FPTP)
+    summary: 每个选区选出一名得票最多者，简单直接但容易造成"赢家通吃"
+    file: options/fptp.md
+
+  - id: rcv
+    title: 排序复选制 (RCV/IRV)
+    summary: 选民按偏好排序候选人，逐轮淘汰最低票者并重新分配选票
+    file: options/rcv.md
+
+  - id: proportional
+    title: 比例代表制
+    summary: 议席按各党得票比例分配，最大化代表性但可能导致碎片化
+    file: options/proportional.md
+
+  - id: mmp
+    title: 混合制 (MMP)
+    summary: 一半议席由选区直选产生，一半由政党比例名单补偿，兼顾地方代表性与比例性
+    file: options/mmp.md
+
+dependencies:
+  - state-structure  # 联邦制/单一制影响选举制度的具体设计
+
+conflicts: []
+
+references:
+  - country: 英国/美国/加拿大/印度
+    note: FPTP 的主要使用国，导致两党制倾向
+  - country: 澳大利亚
+    note: 众议院使用排序复选制（IRV），参议院使用比例代表制（STV）
+  - country: 德国/新西兰
+    note: 联立制（MMP）的典范，被广泛认为是最平衡的设计
+  - country: 以色列/荷兰
+    note: 纯比例代表制，政党碎片化严重但代表性极高
+  - country: 日本
+    note: 并立制（混合但不补偿），小选区 + 比例代表区并行
+  - country: 台湾
+    note: 并立制，73 个单选区 + 34 个不分区（比例代表）
+
+tags: [争议性, 国家治理, 根本制度, 民主]

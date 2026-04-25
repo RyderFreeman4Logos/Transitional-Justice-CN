@@ -30,6 +30,11 @@ modules:
     category: economic
     status: draft
 
+  - id: electoral-system
+    title: 选举制度
+    category: governance
+    status: draft
+
   - id: drug-policy
     title: 毒品政策
     category: social

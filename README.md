@@ -1,64 +1,66 @@
 # Transitional-Justice-CN
 
-Open-source legal framework for a democratic China — prepared in advance so the transition costs less time, less chaos, and less suffering.
-
 开源中国转型正义法律体系：预先编写"新系统的源代码"，缩短政权更迭后的阵痛期。
 
-## Why
+Open-source constitutional framework for a democratic China.
 
-Every democratic transition faces the same bottleneck: drafting a new legal system from scratch under extreme time pressure. This project eliminates that bottleneck by preparing a modular, configurable constitutional framework *before* it is needed.
+## 为什么要做这个项目
 
-Two benefits:
-1. **Reduce transition pain** — a ready-made legal framework prevents power vacuums, protects property, and keeps public services running.
-2. **Lower the perceived risk** — when people can see that a credible alternative exists, the fear of chaos no longer props up the status quo.
+每一次民主转型都面临同样的瓶颈：在极端的时间压力下从零开始起草一套新法律体系。本项目通过**提前准备**一套模块化、可配置的宪法框架来消除这个瓶颈。
 
-## Architecture
+两个好处：
+1. **降低转型阵痛** — 现成的法律框架可以防止权力真空、保护私有财产、维持公共服务运转。
+2. **降低变革的心理门槛** — 当人们看到一个可信的替代方案已经存在，对混乱的恐惧就不再能为现状背书。
+
+## 项目结构
 
 ```
 constitution/
-├── core/           # Non-negotiable rights (immutable)
-│   ├── human-dignity.md
-│   ├── freedom-of-speech.md
-│   ├── freedom-of-press.md
-│   └── ...14 provisions
-├── modules/        # Contested topics (pick-and-choose)
-│   ├── death-penalty/    (abolished | restricted | moratorium)
-│   ├── gun-rights/       (right-to-bear-arms | licensed | prohibited)
-│   ├── abortion/         (protected-right | trimester | restricted)
-│   ├── state-structure/  (federal | unitary-decentralized | unitary-centralized)
-│   ├── land-ownership/   (full-private | mixed | leasehold)
-│   ├── marriage-equality/(full-equality | civil-union | traditional)
-│   ├── drug-policy/      (decriminalized | cannabis-legal | strict-prohibition)
+├── core/           # 核心权利（不可删改）
+│   ├── human-dignity.md         人格尊严
+│   ├── freedom-of-speech.md     言论自由
+│   ├── freedom-of-press.md      新闻自由
+│   └── ... 共 14 项
+├── modules/        # 可选模块（各方立场并列，制宪会议时再选）
+│   ├── death-penalty/     死刑存废 (废除 | 限制 | 暂缓)
+│   ├── gun-rights/        枪支管制 (入宪 | 许可证 | 禁枪)
+│   ├── abortion/          堕胎权   (宪法保障 | 阶段制 | 严格限制)
+│   ├── state-structure/   国家结构 (联邦制 | 分权单一制 | 集权单一制)
+│   ├── land-ownership/    土地制度 (完全私有 | 混合制 | 永久使用权)
+│   ├── electoral-system/  选举制度 (单选区制 | 排序复选 | 比例代表 | 混合制)
+│   ├── marriage-equality/ 婚姻平权 (完全平权 | 民事结合 | 传统定义)
+│   ├── drug-policy/       毒品政策 (去罪化 | 大麻合法 | 严格禁毒)
 │   └── ...
-├── transition/     # Day-0 operating procedures
-│   ├── government-continuity.md
-│   ├── property-protection.md
-│   ├── military-nationalization.md
-│   ├── transitional-justice.md
-│   └── ...9 protocols
-references/         # Source constitutions for comparison
-├── roc-1946-constitution.md    # 中华民国宪法
-├── germany-basic-law.md        # 德国基本法
-├── japan-constitution.md       # 日本国宪法
-├── south-korea-constitution.md # 大韩民国宪法
-└── south-africa-constitution.md# 南非共和国宪法
-profiles/           # Preset configurations (non-binding examples)
-├── liberal.yaml
-├── moderate.yaml
-└── conservative.yaml
-schema/             # Data structure definitions (YAML Schema)
+├── transition/     # 过渡法（Day 0 应急操作规程）
+│   ├── government-continuity.md  政权交接
+│   ├── property-protection.md    财产保护
+│   ├── military-nationalization.md 军队国家化
+│   ├── transitional-justice.md   转型正义
+│   └── ... 共 9 项
+references/         # 参考宪法
+├── roc-1946-constitution.md       中华民国宪法
+├── germany-basic-law.md           德国基本法
+├── japan-constitution.md          日本国宪法
+├── south-korea-constitution.md    大韩民国宪法
+├── south-africa-constitution.md   南非共和国宪法
+└── us-constitution.md             美利坚合众国宪法
+profiles/           # 预设配置（非约束性示例）
+├── liberal.yaml       自由主义倾向
+├── moderate.yaml      温和中间路线
+└── conservative.yaml  保守稳健路线
+schema/             # 数据结构定义（YAML Schema）
 ```
 
-### Design Principles
+## 设计原则
 
-- **Core provisions** are immutable — freedom of speech, press freedom, judicial independence, etc. These cannot be removed or overridden.
-- **Modules** represent genuinely contested policy areas where reasonable people disagree. Each module provides 2-3 mutually exclusive options. The final selection is deferred to a future constitutional convention.
-- **Transition protocols** are essential Day-0 operating procedures — they keep the lights on and prevent chaos during the transition period.
-- **Profiles** are non-binding example configurations that demonstrate how the modular system works.
+- **核心条款**不可删改 — 言论自由、新闻自由、司法独立等。任何模块选择或配置都不能覆盖它们。
+- **可选模块**代表合理分歧的政策领域。每个模块提供 2-3 个互斥选项，最终选择权留给未来的制宪会议。
+- **过渡法**是 Day 0 的应急操作规程 — 在转型期间维持社会运转、防止混乱。
+- **预设配置**是非约束性的示例，展示模块化系统如何组合使用。
 
-### Data Format
+## 数据格式
 
-All legal text is stored as Markdown with YAML frontmatter. Machine-parseable, human-readable, Git-friendly.
+所有法律文本以 **Markdown + YAML frontmatter** 存储。机器可解析、人类可阅读、Git 友好。
 
 ```yaml
 ---
@@ -75,22 +77,22 @@ references:
 ...
 ```
 
-## Contributing
+## 参与贡献
 
-This project welcomes contributions from legal scholars, political scientists, and citizens.
+本项目欢迎法学学者、政治学者和公民参与。
 
-- **Core provisions**: Submit issues to propose changes. These require broad consensus.
-- **Modules**: Submit PRs with new options or improvements to existing ones.
-- **Transition protocols**: These are the highest-priority items. Real-world expertise is especially valued.
-- **References**: Help us collect and translate constitutions and legal texts.
-- **Fork freely**: If you disagree with core design decisions, fork and build your own "distribution."
+- **核心条款**：通过 Issue 提议修改，需要广泛共识。
+- **可选模块**：通过 PR 提交新选项或改进现有选项。
+- **过渡法**：优先级最高的部分，特别需要实务经验。
+- **参考资料**：帮助收集各国宪法和法律文本。
+- **随意 Fork**：如果你不同意核心设计决策，Fork 一份构建你自己的"发行版"。
 
-## Governance
+## 治理
 
-- Recognized exiled legal professionals serve as core maintainers (public contributors, no privacy concerns).
-- Issues are open to everyone — anonymous contributions welcome.
-- AI agents assist the legal team with research, consistency checking, and GitHub operations.
+- 受认可的流亡法律专业人士担任核心维护者（公开贡献，无隐私顾虑）。
+- Issue 向所有人开放，欢迎匿名贡献。
+- AI Agent 辅助法律团队进行研究、一致性检查和 GitHub 操作。
 
-## License
+## 许可证
 
-[CC0 1.0 Universal](LICENSE) — This legal framework belongs to no one and everyone.
+[CC0 1.0 通用](LICENSE) — 这套法律框架不属于任何人，属于所有人。
