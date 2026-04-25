@@ -1,0 +1,47 @@
+id: government-system
+title: 政府体制
+title_en: System of Government
+category: governance
+status: draft
+description: |
+  政府体制决定行政权与立法权的关系，是最根本的宪法设计选择之一。
+  总统制强调行政独立与权力分立，议会制强调行政对立法的负责，
+  半总统制则试图兼取两者优势。
+
+options:
+  - id: presidential
+    title: 总统制
+    summary: 总统由人民直选，独立于立法机关，兼任国家元首和政府首脑
+    file: options/presidential.md
+
+  - id: parliamentary
+    title: 议会制
+    summary: 政府首脑由议会多数产生并对议会负责，国家元首为虚位
+    file: options/parliamentary.md
+
+  - id: semi-presidential
+    title: 半总统制
+    summary: 总统直选掌握部分行政权，总理由议会产生掌握日常行政
+    file: options/semi-presidential.md
+
+dependencies:
+  - electoral-system  # 选举制度直接影响政府体制的运作效果
+  - state-structure   # 联邦制/单一制影响中央政府的权力范围
+
+conflicts: []
+
+references:
+  - country: 美国
+    note: 总统制典范，总统与国会严格分立
+  - country: 德国
+    note: 议会制，联邦总理由联邦议院选举产生
+  - country: 法国
+    note: 半总统制典范，总统直选 + 总理对议会负责
+  - country: 韩国
+    note: 总统制但设有国务总理，总统权力极大
+  - country: 日本
+    note: 议会制，天皇为虚位元首，首相由国会选举
+  - country: 台湾
+    note: 半总统制，总统直选 + 行政院长由总统任命
+
+tags: [争议性, 国家治理, 根本制度]

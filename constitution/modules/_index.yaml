@@ -20,6 +20,11 @@ modules:
     category: civil-rights
     status: draft
 
+  - id: government-system
+    title: 政府体制
+    category: governance
+    status: draft
+
   - id: state-structure
     title: 国家结构形式
     category: governance
