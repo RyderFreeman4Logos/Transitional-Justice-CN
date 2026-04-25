@@ -1,0 +1,47 @@
+id: ethnic-autonomy
+title: 少数民族与地区自治
+title_en: Ethnic Minority and Regional Autonomy
+category: governance
+status: draft
+description: |
+  中国是多民族国家，西藏、新疆、内蒙古等地区的自治安排
+  是转型中最敏感复杂的议题。自治程度的选择直接关系到
+  国家统一与民族自决之间的平衡。
+
+options:
+  - id: cultural-autonomy
+    title: 文化自治
+    summary: 少数民族享有语言、宗教、教育等文化领域的自治权，但不享有政治自治权
+    file: options/cultural-autonomy.md
+
+  - id: administrative-autonomy
+    title: 行政自治
+    summary: 自治区享有较大的行政管理权，但立法权和司法权仍属中央
+    file: options/administrative-autonomy.md
+
+  - id: high-autonomy
+    title: 高度自治
+    summary: 自治区享有独立的立法权、行政权和司法权，中央仅保留国防和外交
+    file: options/high-autonomy.md
+
+  - id: self-determination
+    title: 自决权
+    summary: 特定地区人民有权通过公投决定自治程度，包括独立选项
+    file: options/self-determination.md
+
+dependencies:
+  - state-structure  # 联邦制/单一制框架直接影响自治安排
+
+conflicts: []
+
+references:
+  - country: 西班牙
+    note: 自治区制度，加泰罗尼亚和巴斯克享有不同程度的自治
+  - country: 加拿大
+    note: 魁北克特殊地位与原住民自治
+  - country: 英国
+    note: 苏格兰和威尔士的权力下放（devolution）
+  - country: 瑞士
+    note: 高度联邦化，各州（含不同语言区）享有广泛自治
+
+tags: [争议性, 国家治理, 民族问题, 领土完整]

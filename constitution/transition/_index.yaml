@@ -40,6 +40,11 @@ protocols:
     priority: high
     summary: 解除媒体管控，开放新闻自由
 
+  - id: hong-kong-macau
+    file: hong-kong-macau.md
+    priority: high
+    summary: 恢复港澳高度自治，撤销国安法，安排地位公投
+
   - id: political-parties
     file: political-parties.md
     priority: medium

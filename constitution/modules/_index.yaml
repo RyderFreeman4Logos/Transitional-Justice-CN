@@ -50,6 +50,11 @@ modules:
     category: civil-rights
     status: draft
 
+  - id: ethnic-autonomy
+    title: 少数民族与地区自治
+    category: governance
+    status: draft
+
   - id: immigration
     title: 移民政策
     category: social
