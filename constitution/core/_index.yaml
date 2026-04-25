@@ -60,3 +60,7 @@ provisions:
   - id: right-to-privacy
     file: right-to-privacy.md
     summary: 隐私权，包括通信秘密与数据保护
+
+  - id: constitutional-amendment
+    file: constitutional-amendment.md
+    summary: 修宪程序（三分之二+冷却期+公投）及永恒条款
