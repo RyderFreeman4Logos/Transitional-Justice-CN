@@ -13,5 +13,5 @@ selections:
   land-ownership: mixed
   drug-policy: cannabis-legal
   marriage-equality: full-equality
-  immigration: regulated     # stub
-  euthanasia: regulated      # stub
+  immigration: points-based
+  euthanasia: passive-only

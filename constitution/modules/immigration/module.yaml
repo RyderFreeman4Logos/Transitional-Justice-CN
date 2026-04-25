@@ -1,0 +1,39 @@
+id: immigration
+title: 移民政策
+title_en: Immigration Policy
+category: social
+status: draft
+description: |
+  移民政策涉及国家主权、劳动力市场、人道主义义务和文化认同等多重考量。
+  中国在转型后将面临全新的移民议题：海外华人回流、难民接收、劳工移民等。
+
+options:
+  - id: open
+    title: 开放移民
+    summary: 以自由迁徙为原则，仅对安全威胁进行必要限制
+    file: options/open.md
+
+  - id: points-based
+    title: 积分制移民
+    summary: 建立基于技能、教育和劳动力需求的积分评估体系
+    file: options/points-based.md
+
+  - id: restrictive
+    title: 严格管控
+    summary: 以国家安全和社会稳定为优先，严格限制移民数量
+    file: options/restrictive.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 加拿大
+    note: 积分制移民的典范
+  - country: 澳大利亚
+    note: 积分制 + 严格的边境管控
+  - country: 德国
+    note: 2015年难民危机后的政策演变
+  - country: 日本
+    note: 传统上极为严格，近年因劳动力短缺而逐步放宽
+
+tags: [争议性, 社会政策, 人口]

@@ -58,9 +58,9 @@ modules:
   - id: immigration
     title: 移民政策
     category: social
-    status: stub
+    status: draft
 
   - id: euthanasia
     title: 安乐死
     category: civil-rights
-    status: stub
+    status: draft

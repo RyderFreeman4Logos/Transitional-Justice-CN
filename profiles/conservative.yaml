@@ -13,5 +13,5 @@ selections:
   land-ownership: leasehold
   drug-policy: strict-prohibition
   marriage-equality: civil-union
-  immigration: restricted    # stub
-  euthanasia: prohibited     # stub
+  immigration: restrictive
+  euthanasia: prohibited

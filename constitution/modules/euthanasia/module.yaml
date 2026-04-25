@@ -1,0 +1,39 @@
+id: euthanasia
+title: 安乐死
+title_en: Euthanasia
+category: civil-rights
+status: draft
+description: |
+  安乐死涉及个人自主权、生命尊严与医学伦理之间的平衡。
+  各国立法差异极大，从完全禁止到允许主动安乐死都有先例。
+
+options:
+  - id: legalized
+    title: 合法化
+    summary: 在严格条件和程序保障下允许安乐死和医助自杀
+    file: options/legalized.md
+
+  - id: passive-only
+    title: 仅允许被动安乐死
+    summary: 允许放弃治疗和拒绝延命措施，但禁止主动致死行为
+    file: options/passive-only.md
+
+  - id: prohibited
+    title: 禁止
+    summary: 任何形式的安乐死均为非法
+    file: options/prohibited.md
+
+dependencies: []
+conflicts: []
+
+references:
+  - country: 荷兰
+    note: 2002年全球首个安乐死合法化国家
+  - country: 比利时
+    note: 安乐死合法化，包括对未成年人
+  - country: 瑞士
+    note: 禁止主动安乐死，但允许医助自杀（Dignitas）
+  - country: 加拿大
+    note: 2016年合法化，条件逐步放宽
+
+tags: [争议性, 公民权利, 生命伦理, 医学伦理]
