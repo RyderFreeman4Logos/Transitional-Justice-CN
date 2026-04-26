@@ -24,8 +24,7 @@ options:
     summary: 土地所有权归国家，但赋予个人永久且可交易的使用权
     file: options/leasehold.md
 
-dependencies:
-  - right-to-property  # core provision
+dependencies: []  # relates to core provision right-to-property
 
 references:
   - country: 台湾

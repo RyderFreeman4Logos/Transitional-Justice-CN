@@ -24,8 +24,7 @@ options:
     summary: 除执法和军事用途外禁止民间持有枪支
     file: options/prohibited.md
 
-dependencies:
-  - public-safety  # future module
+dependencies: []  # public-safety module planned
 
 references:
   - country: 美国

@@ -8,7 +8,7 @@ tags: [基本权利, 宪法基石]
 references:
   - constitution: germany-basic-law
     articles: [1]
-    note: "人的尊严不可侵犯"是德国基本法第一条，被视为整部宪法的基石
+    note: “人的尊严不可侵犯”是德国基本法第一条，被视为整部宪法的基石
   - constitution: udhr
     articles: [1]
     note: 世界人权宣言第一条

@@ -1,8 +1,9 @@
 # Schema: Core Provision (宪法核心条款)
 #
 # Each core provision is a Markdown file with this YAML frontmatter.
-# Core provisions are immutable - they cannot be removed or overridden
-# by module selection. They represent non-negotiable fundamental rights.
+# Core provisions are high-consensus defaults pre-drafted to save
+# convention time. They can be revised; contested items may be
+# refactored into optional modules.
 
 type: object
 required: [id, title, title_en, tier, category]
