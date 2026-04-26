@@ -1,0 +1,14 @@
+[book]
+title = "开源中国宪法框架"
+description = "面向后中共时代的开源模块化宪法框架"
+authors = ["GMDK Community"]
+language = "zh-CN"
+src = "src"
+
+[build]
+build-dir = "../_site"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/gmdk-org/Transitional-Justice-CN"
