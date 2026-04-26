@@ -11,4 +11,5 @@ build-dir = "../_site"
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "ayu"
+site-url = "/Transitional-Justice-CN/"
 git-repository-url = "https://github.com/gmdk-org/Transitional-Justice-CN"
