@@ -1,8 +1,8 @@
 # Core Provisions Index (核心条款索引)
 #
-# These provisions are NON-NEGOTIABLE. They form the immutable
-# foundation of the constitutional order. No module selection
-# or profile configuration can override or remove them.
+# High-consensus defaults pre-drafted to save constitutional
+# convention time. They are NOT immutable — contested items
+# may be revised or refactored into modules.
 
 provisions:
   - id: human-dignity
